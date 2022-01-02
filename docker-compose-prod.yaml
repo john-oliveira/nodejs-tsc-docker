@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  nodetsc:
+    image: johnoliveira/nodetsc:1.0.0
+    container_name: nodetsc
+    ports:
+      - 8080:8080

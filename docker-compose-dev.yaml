@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  nodetsc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    image: nodetsc:1.0.0-dev
+    container_name: nodetsc
+    ports:
+      - 8080:8080
+      - 9229:9229 # Debugger listening on port 9229
+    volumes:
+      - ./src:/usr/app/src
+    command: ["npm", "run", "debug"]

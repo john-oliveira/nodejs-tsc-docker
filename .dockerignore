@@ -1,0 +1,6 @@
+build
+node_modules
+.vscode
+Dockerfile
+README.md
+Makefile
