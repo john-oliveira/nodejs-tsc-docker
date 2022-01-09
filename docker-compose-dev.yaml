@@ -12,4 +12,5 @@ services:
       - 9229:9229 # Debugger listening on port 9229
     volumes:
       - ./src:/usr/app/src
+      - ./views:/usr/app/views
     command: ["npm", "run", "debug"]
