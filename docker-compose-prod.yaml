@@ -5,3 +5,9 @@ services:
     container_name: nodetsc
     ports:
       - 8080:8080
+    networks:
+      - nodetsc_net
+
+networks:
+  nodetsc_net:
+    driver: bridge
