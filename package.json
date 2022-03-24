@@ -4,8 +4,8 @@
   "description": "Docker build example with nodejs and typescript",
   "scripts": {
     "start": "node build/index.js",
-    "dev": "npx nodemon -w src -e ts --exec \"npx tsc && node build/index.js\" --legacy-watch",
-    "debug": "npx nodemon -w src -e ts --exec \"node --inspect=0.0.0.0:9229 -r ts-node/register src/index.ts\" --legacy-watch"
+    "dev": "nodemon -w src -e ts --exec \"npx tsc && node build/index.js\" --legacy-watch",
+    "debug": "nodemon -w src -e ts --exec \"node --inspect=0.0.0.0:9229 -r ts-node/register src/index.ts\" --legacy-watch"
   },
   "keywords": [],
   "author": "",
